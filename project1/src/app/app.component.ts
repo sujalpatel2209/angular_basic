@@ -5,7 +5,7 @@ import { HomeComponent } from './home/index';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  directives: [HomeComponent]
+  directives: ['HomeComponent']
 })
 export class AppComponent {
   title = 'Angular JS Page';
