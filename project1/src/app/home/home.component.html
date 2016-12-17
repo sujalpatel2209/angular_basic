@@ -5,6 +5,15 @@
 <ng-content></ng-content>
 <br><br>
 <!--Binding Properies Example-->
-<input [value] = 'fname'/>
+
+<!--<input [value] = 'fname'/>
 <input [value] = 'lname'/>
-<input [required] = 'setRequired'/>
+<input [required] = 'setRequired'/>-->
+
+<input value = '{{ fname }}'/>
+<input value = '{{ lname }}'/>
+<input required = '{{ setRequired }}'/>
+
+
+<!--<button (mouseover)="alertMe('Click Event Binding...!!!')">Click Here</button>-->
+<button (click)="alertMe('Click Event Binding...!!!')">Click Here</button>

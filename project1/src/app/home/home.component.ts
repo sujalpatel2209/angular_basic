@@ -11,6 +11,11 @@ title = "Home Component";
 fname = "Sujal";
 lname = "Patel";
 setRequired = true;
+
+alertMe(message){
+    alert(message);
+}
+
 constructor() { }
 
 ngOnInit() {
