@@ -10,6 +10,10 @@
 <input [value] = 'lname'/>
 <input [required] = 'setRequired'/>-->
 
+
+{{ userdetail.name }}
+{{ userdetail.job }}
+
 <input value = '{{ fname }}'/>
 <input value = '{{ lname }}'/>
 <input required = '{{ setRequired }}'/>
@@ -17,3 +21,5 @@
 
 <!--<button (mouseover)="alertMe('Click Event Binding...!!!')">Click Here</button>-->
 <button (click)="alertMe('Click Event Binding...!!!')">Click Here</button>
+
+<button (click)="alertYell($event)">Click Here</button>

@@ -10,4 +10,14 @@ import { HomeComponent } from './home/index';
 export class AppComponent {
   title = 'Angular JS Page';
   name = 'Sujal Patel';
+  userdetail = {
+    name : "Sujal",
+    job : "Web"
+  };
+  
+  yell(e){
+    alert("This is Custom Event");
+    console.log(e);
+}
+  
 }

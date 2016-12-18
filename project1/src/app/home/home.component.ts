@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
 selector: 'app-home',
@@ -12,6 +12,12 @@ fname = "Sujal";
 lname = "Patel";
 setRequired = true;
 
+@Input() userdetail; 
+@Output() yilled = new EventEmitter();
+
+alertYell(e){
+    this.yilled.emit(e);
+}
 alertMe(message){
     alert(message);
 }
