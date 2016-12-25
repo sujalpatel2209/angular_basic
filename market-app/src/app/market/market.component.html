@@ -1,3 +1,5 @@
-<p>
-  market works!
-</p>
+<ul>
+    <li *ngFor="let item of marketItem">
+        <button (click)="addMarketItem()">Add to Collecation</button> &nbsp; {{ item.desc }}
+    </li>
+</ul>
