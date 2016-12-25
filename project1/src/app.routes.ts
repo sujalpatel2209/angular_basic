@@ -1,12 +1,12 @@
 import { DirectoryComponent } from './directory/directory.component';
-import { HomeComponent } from './directory/home.component';
-import { provideRouter } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { APP_ROUTES } from '@angular/router';
 
-const APP_ROUTES = [
+export const routes: APP_ROUTES = [
     { path:'directory', component: DirectoryComponent},
     { path:'', component: HomeComponent}
 ];
 
-export const APP_ROUTES_PROVIDER = [
+<!--export const APP_ROUTES_PROVIDER = [
     provideRouter(APP_ROUTES)
-];
+];-->
