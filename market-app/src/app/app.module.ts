@@ -18,7 +18,7 @@ import { CollecationComponent } from './collecation/collecation.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [CollectableService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

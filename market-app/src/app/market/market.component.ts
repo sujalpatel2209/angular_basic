@@ -1,25 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { CollectableService } from '../shared/collectable.service';
 
 @Component({
-selector: 'app-market',
-templateUrl: './market.component.html',
-styleUrls: ['./market.component.css']
+    selector: 'app-market',
+    templateUrl: './market.component.html'
 })
+
 export class MarketComponent implements OnInit {
 
-marketItem = [
-{ desc : 'Book1', type: 'B1' },
-{ desc : 'Book2', type: 'B2' },
-{ desc : 'Book3', type: 'B3' },
-{ desc : 'Book4', type: 'B4' },
-];
-    
-addMarketItem(){
-    alert('Hello');
-}
-constructor() { }
+    collectables = [];
 
-ngOnInit() {
-}
+    onAddToCollection(){
+        alert("Click me ...!!!");
+    }
+
+    constructor(private collectableService: CollectableService){}
+
+    ngOnInit() {
+        this.collectables = this.collectableService.getCollectables();
+    }
 
 }

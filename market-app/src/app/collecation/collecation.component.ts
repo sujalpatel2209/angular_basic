@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-collecation',
-  templateUrl: './collecation.component.html',
-  styleUrls: ['./collecation.component.css']
+  templateUrl: './collecation.component.html'
 })
 export class CollecationComponent implements OnInit {
 
